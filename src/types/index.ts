@@ -115,25 +115,3 @@ export interface LeadSourceData {
   conversions: number;
   conversionRate: number;
 }
-
-export type PartnerCategory = "hospital" | "ayurveda" | "lab" | "transport" | "nursing" | "equipment";
-
-export type PartnerAgreementStatus = "none" | "pending" | "signed" | "expired";
-
-export interface Partner {
-  id: string;
-  name: string;
-  category: PartnerCategory;
-  contactPerson: string;
-  phone: string;
-  email: string;
-  address: string;
-  agreementStatus: PartnerAgreementStatus;
-  agreementDate?: string;
-  commissionRate?: number;
-  totalPatientsReferred: number;
-  totalRevenue: number;
-  responseTime?: number;
-  satisfactionScore?: number;
-  createdAt: string;
-}
