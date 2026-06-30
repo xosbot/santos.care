@@ -222,7 +222,7 @@ export default function RoadmapPage() {
                             <div className={`font-medium ${milestone.status === "completed" ? "line-through text-muted-foreground" : ""}`}>
                               {milestone.title}
                             </div>
-                            {milestone.note && (
+                            {"note" in milestone && milestone.note ? (
                               <div className="text-sm text-muted-foreground mt-1">
                                 {milestone.note}
                               </div>
