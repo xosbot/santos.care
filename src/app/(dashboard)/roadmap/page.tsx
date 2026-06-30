@@ -226,7 +226,7 @@ export default function RoadmapPage() {
                               <div className="text-sm text-muted-foreground mt-1">
                                 {milestone.note}
                               </div>
-                            )}
+                            ) : null}
                           </div>
                           <Badge variant="outline" className={`${style.bg} ${style.text}`}>
                             {milestone.status.replace("_", " ")}
