@@ -8,14 +8,25 @@
 - **Parent:** Heal India Medi Tourism (santos.care)
 - **Company:** Santos King Tours & Travels Pvt. Ltd.
 - **Started:** June 29, 2026
-- **Status:** Active Development
+- **Status:** Deployed (mock data) — active development
 - **Current Version:** 0.1.0 (Phase 1)
+- **Live URL:** https://santocare-ops.vercel.app
+- **Protection:** HTTP Basic Auth (env: `OPS_AUTH_USER` / `OPS_AUTH_PASS`)
 
 ---
 
 ## Phase 1: Foundation — COMPLETE
 
 ### Duration: June 29, 2026 (Single Day)
+
+### Deployed: June 30, 2026
+
+- **Platform:** Vercel (Hobby plan, region iad1)
+- **URL:** https://santocare-ops.vercel.app
+- **Build:** 9 static pages + 10 serverless API routes
+- **Auth:** Middleware-based HTTP Basic Auth (Pro-only Vercel Password Protection is unavailable on Hobby)
+- **Credentials:** `santos` / `He@lInd!a2026` (set `OPS_AUTH_USER` / `OPS_AUTH_PASS` in Vercel env to override)
+- **Note:** All data is in-memory mock. Cold starts reset the in-memory arrays, so any "saved" data won't survive between requests across different serverless invocations.
 
 ### Achievements
 
