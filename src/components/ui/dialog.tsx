@@ -85,3 +85,15 @@ export function DialogFooter({ children, className }: { children: React.ReactNod
     </div>
   );
 }
+
+export function DialogContent({ children, className }: { children: React.ReactNode; className?: string }) {
+  return <div className={cn("", className)}>{children}</div>;
+}
+
+export function DialogHeader({ children, className }: { children: React.ReactNode; className?: string }) {
+  return <div className={cn("flex flex-col space-y-1.5", className)}>{children}</div>;
+}
+
+export function DialogTitle({ children, className }: { children: React.ReactNode; className?: string }) {
+  return <h2 className={cn("text-lg font-semibold", className)}>{children}</h2>;
+}
