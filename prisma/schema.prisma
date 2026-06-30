@@ -259,6 +259,7 @@ model Document {
 
   patientId  String?
   patient    Patient? @relation(fields: [patientId], references: [id], onDelete: Cascade)
+  medicalReports Patient[] @relation("MedicalReports")
 
   partnerId  String?
   partner    Partner? @relation(fields: [partnerId], references: [id], onDelete: Cascade)
